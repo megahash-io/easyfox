@@ -29,9 +29,9 @@
   - [Installing](#installing)
     - [Using Codespaces](#using-codespaces)
     - [Locally](#locally)
+- [🔍 TruLens grounded truth](#trulens)
 - [🔧 Running the tests ](#-running-the-tests-)
 - [🎈 Test Data ](#-testdata-)
-  - [:sparkles:Build a Python-Backed Frontend With HTMX and TailwindCSS:sparkles:](#sparklesbuild-a-python-backed-frontend-with-htmx-and-tailwindcsssparkles)
 - [⛏️ Built Using ](#️-built-using-)
 - [✍️ Authors ](#️-authors-)
 - [🎉 Acknowledgements ](#-acknowledgements-)
@@ -77,6 +77,17 @@ Press the `<> Code` button above and select `Create a Codespace on main`. This w
 #### Locally
 Create a copy of the repo using the `Use this template` button above. Select `Create a new repository`.
 
+##### With pkgx
+Just type 
+```
+dev
+pip install -r requirements.txt
+```
+
+and you should be good to go.
+
+##### With venv
+
 > **Warning**
 > Be sure to select **`Include all branches`** when cloning the repo.
 
@@ -104,7 +115,9 @@ Then, install the requirements:
 python -m pip install -r requirements.txt
 ```
 
-Next, install TailwindCSS:
+##### Finalizing install
+
+Install TailwindCSS:
 
 ```
 npm install
@@ -121,6 +134,20 @@ Edit it and add the key:
 
 ```
 OPENAI_API_KEY="sk-..."
+```
+
+## 🔍 TruLens grounded truth <a name="trulens"></a>
+
+Run ```instrument.py``` from ```/app``` with
+
+```python
+python instrument.py
+```
+
+After the run, launch the dashboard:
+
+```
+trulens-eval
 ```
 
 ## 🔧 Running the tests <a name = "tests"></a>
