@@ -46,7 +46,7 @@ Follow the instructions below to get easyfox up and running locally.
 
 ### Prerequisites
 
-The example app was created with **Python 3.11**, but it is likely compatible with earlier versions. However, I would highly recommend using the latest version of Python. The rest of the dependencies are listed in the `requirements.txt` file.
+The example app was created with **Python 3.10**. I would highly recommend sticking to this version of Python. The rest of the dependencies are listed in the `requirements.txt` file.
 
 ```
 pydantic
