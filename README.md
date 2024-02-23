@@ -104,6 +104,13 @@ Then, install the requirements:
 python -m pip install -r requirements.txt
 ```
 
+Next, install TailwindCSS:
+
+```
+npm install
+```
+
+
 Finally, create the env file from the example provided and fill in your OpenAI api key:
 
 ```
