@@ -17,7 +17,7 @@
 </p>
 <p align="center">
   <a href="" rel="noopener">
- <img width=400px height=400px src="https://github.com/megahash-io/easyfox/blob/main/demo.gif" alt="Project demo"></a>
+ <img width=600px height=400px src="https://github.com/megahash-io/easyfox/blob/main/demo.gif" alt="Project demo"></a>
 </p>
 
 ## 📝 Table of Contents
