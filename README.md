@@ -4,15 +4,15 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/tataraba/simplesite)](https://github.com/tataraba/simplesite/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/tataraba/simplesite)](https://github.com/tataraba/simplesite/pulls)
+![GitHub Issues](https://img.shields.io/github/issues/megahash-io/easyfox)
+![Github Pull Requests](https://img.shields.io/github/issues-pr/megahash-io/easyfox)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
 
 ---
 
-<p align="center"> Create a Python-backed frontend with FastAPI, htmx, and TailwindCSS. Build it from scratch and follow the guide. Alternatively, clone the repo/use the template, or better yet, spin up a Codespace and start right away!
+<p align="center"> AI based german language learning app. Have your german text analyzed and classified by GER level. Additionally, let the AI generate practice tasks.
     <br>
 </p>
 <p align="center">
@@ -39,21 +39,20 @@
 
 ## 🧐 About <a name = "about"></a>
 
-Build a beautiful web application using nothing more than Python, htmx, and TailwindCSS. Harness the power of Jinja templates and server-side rendering to create a dynamic, REST-ful web app.
+easyfox was born to provide AI based german language training and learning tools.
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
-This repository was prepared for a workshop on how to create a python-backed frontend, featuring Jinja templates for HTML rendering, TailwindCSS for style, and htmx for pizzazz! 😎
-
-The workshop consists of [four chapters](#-guide-), each introducing an additional tool on the road to creating a beautiful* Python-backed frontend.
-
-> *Note: Beauty is in the eye of the beholder.
+Follow the instructions below to get easyfox up and running locally.
 
 ### Prerequisites
 
 The example app was created with **Python 3.11**, but it is likely compatible with earlier versions. However, I would highly recommend using the latest version of Python. The rest of the dependencies are listed in the `requirements.txt` file.
 
 ```
+pydantic
+langchain
+openai
 fastapi[all]
 jinja2
 jinja2-fragments
@@ -61,6 +60,10 @@ python-multipart
 pytest
 pytailwindcss
 tinydb
+markdown
+python-multipart
+trulens_eval 
+chromadb
 ```
 
 The `fastapi[all]` dependency installs some other optional dependencies and features. It also includes `uvicorn`, which is used as the server to run your code. (You could choose to just use `fastapi` and `uvicorn[standard]` separately, if you prefer.)
@@ -114,19 +117,6 @@ pytest
 
 If everything has gone well so far, all tests should pass.
 
-## 🚗 💨 Need to Catch Up?
-If you are using Codespaces, there is a script you can use to catch up to the current chapter. Just run the following command in your terminal and choose the section we're on:
-
-```shell
-. catchup.sh
-```
-
-https://user-images.githubusercontent.com/8632637/228153775-a3ca38fa-c467-402d-bf60-5c55b0f9b9e9.mp4
-
-Or (if you're developing locally) to catch up **manually**...
-
-
-Checkout the branch that corresponds to the appropriate section (see below).
 
 ## 🎈 Guide <a name="guide"></a>
 

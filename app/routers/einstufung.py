@@ -3,7 +3,7 @@ from fastapi import Request, APIRouter, WebSocket, Form
 from app.config import Settings
 from jinja2_fragments.fastapi import Jinja2Blocks
 from dotenv import load_dotenv
-from langchain.chat_models import ChatOpenAI
+from langchain_openai.chat_models import ChatOpenAI
 from langchain.callbacks.streaming_aiter import AsyncIteratorCallbackHandler
 from langchain.schema import HumanMessage, SystemMessage
 import asyncio, json

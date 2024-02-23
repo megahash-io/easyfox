@@ -1,5 +1,5 @@
-pydantic>=1.4.0,<2
-langchain
+pydantic
+langchain-openai
 openai
 fastapi[all]
 jinja2
@@ -10,3 +10,5 @@ pytailwindcss
 tinydb
 markdown
 python-multipart
+trulens_eval
+chromadb
