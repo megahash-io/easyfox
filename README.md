@@ -74,8 +74,6 @@ The `fastapi[all]` dependency installs some other optional dependencies and feat
 #### Using Codespaces
 Press the `<> Code` button above and select `Create a Codespace on main`. This will open a new window in your browser, where you can run the code in a virtual environment.
 
-https://user-images.githubusercontent.com/8632637/228152014-a73297f5-dfd7-400c-96b1-17239dcdb633.mp4
-
 #### Locally
 Create a copy of the repo using the `Use this template` button above. Select `Create a new repository`.
 
