@@ -1,0 +1,11 @@
+<div class="p-8">
+    <div id="tab_2" class="border rounded-xl">
+        
+        <div id="questions" class="flex-row" hx-ext="json-enc" hx-trigger="change"
+        hx-post="/questions"
+        hx-target="#questions"
+        hx-vals='js:{usertext:document.getElementById("usertext").value}'>
+        <img class="htmx-indicator" src="https://i.imgur.com/8THYvPQ.gif">
+        </div>
+    </div>
+</div>

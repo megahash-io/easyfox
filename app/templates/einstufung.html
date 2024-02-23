@@ -1,0 +1,30 @@
+{% extends "/shared/_base.html" %} {% block content %}
+
+<script type="text/hyperscript">
+
+  def userInput(val)
+      put val into usertext.value
+      put val.length into usertext_words.innerHTML
+      if val.length <= 2000
+          add .text-green-700 to #usertext_words
+          remove .text-red-700 from #usertext_words
+      otherwise
+          remove .text-green-700 from #usertext_words
+          add .text-red-700 to #usertext_words
+  end
+</script>
+
+<div class="grid grid-cols-3 gap-4 sm:ml-64">
+  <div class="flex-1">
+    {% include 'yourtext.html' %}
+  </div>
+  <div class="flex-1">
+    {% include 'analyse.html' %}
+  </div>
+  <div class="flex-1">
+    {% include 'verstaendnis.html' %}
+  </div>
+</div>
+
+
+{% endblock %}

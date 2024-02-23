@@ -1,0 +1,12 @@
+pydantic>=1.4.0,<2
+langchain
+openai
+fastapi[all]
+jinja2
+jinja2-fragments
+python-multipart
+pytest
+pytailwindcss
+tinydb
+markdown
+python-multipart

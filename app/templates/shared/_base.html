@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page_title }}</title>
+    <meta name="description" content="{{ page_description }}" />
+
+    <!-- OPTIONAL: Facebook Open Graph: https://developers.facebook.com/docs/sharing/opengraph -->
+    <meta property="og:site_name" content="{{ site_name }}" />
+    <meta
+      property="og:type"
+      content="Simple site featuring tailwind and htmx..."
+    />
+    <meta property="og:title" content="{{ page_title }}" />
+    <meta property="og:description" content="{{ page_description }}" />
+    <meta property="og:url" content="https://wwww.example.com" />
+
+    <!-- OPTIONAL: Favicon! -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/favicon/apple-touch-icon.png'"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/favicon/favicon-16x16.png"
+    />
+
+    <!-- Cookie Banner -->
+    <script
+      id="Cookiebot"
+      src="https://consent.cookiebot.com/uc.js"
+      data-cbid="66034ebe-74f7-492e-819d-1a649f88b3f9"
+      type="text/javascript"
+      async
+    ></script>
+    <script
+      id="CookieDeclaration"
+      src="https://consent.cookiebot.com/66034ebe-74f7-492e-819d-1a649f88b3f9/cd.js"
+      type="text/javascript"
+      async
+    ></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/main.css" type="text/css" />
+
+    <!-- htmx -->
+    <script src="/static/js/htmx.min.js"></script>
+    <script src="https://unpkg.com/htmx.org/dist/ext/json-enc.js"></script>
+    <script src="https://unpkg.com/htmx.org/dist/ext/ws.js"></script>
+    <script src="https://unpkg.com/hyperscript.org@0.9.9"></script>
+
+    <!-- marked -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <script>
+      localStorage.theme = "light";
+    </script>
+  </head>
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-0H8DTZMB41"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-0H8DTZMB41");
+  </script>
+
+  <body class="p-5 bg-white">
+    {% block sidebar %} {% include "/shared/_sidebar.html" %} {% endblock %}
+
+    <div id="container m-auto">{% block content %} {% endblock %}</div>
+
+    {% block footer %} {% include "/shared/_footer.html" %} {% endblock %}
+  </body>
+</html>

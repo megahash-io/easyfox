@@ -1,0 +1,24 @@
+
+service: easyfox
+builder:
+  multiarch: false
+  
+image: megahashio/easyfox_base
+
+healthcheck:
+  path: /up
+  port: 3999
+
+servers:
+  - 116.203.84.15
+
+registry:
+  username: megahashio
+  password:
+    - MRSK_REGISTRY_PASSWORD
+
+env:
+  clear:
+    PORT: 3999
+  secret:
+    - OPENAI_API_KEY
