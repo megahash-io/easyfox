@@ -39,4 +39,4 @@ tru_app = TruCustomApp(llm_app, app_id = 'Easyfox', feedbacks = [f_groundtruth])
 with tru_app as recording:
     llm_app.completion("Wo findet der Deutschkurs statt?")
     llm_app.completion("Aus welchem Land kommt Jack?")
-    tru.get_leaderboard(app_ids=[tru_app.app_id])
+    
