@@ -104,6 +104,18 @@ Then, install the requirements:
 python -m pip install -r requirements.txt
 ```
 
+Finally, create the env file from the example provided and fill in your OpenAI api key:
+
+```
+cp .env.example .env
+```
+
+Edit it and add the key:
+
+```
+OPENAI_API_KEY="sk-..."
+```
+
 ## 🔧 Running the tests <a name = "tests"></a>
 
 After activating your virtual environment, you can run tests by typing `pytest` on the command line. This makes sure that your application runs and can generate a "Hello World" message.
